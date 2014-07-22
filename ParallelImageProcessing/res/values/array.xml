@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="command">
+        <item>SHA-1 Entryption</item>
+        <item>NLmeans denoising</item>
+        <item>SRAD denoising</item>
+        <item>Sobel filter</item>
+        <item>Gaussian filter</item>
+        <item>Bilateral filter</item>
+        <item>K-means image segmentation</item>
+        <item>Matrix multiplication</item>
+        <item>Get device information</item>
+    </string-array>
+
+</resources>

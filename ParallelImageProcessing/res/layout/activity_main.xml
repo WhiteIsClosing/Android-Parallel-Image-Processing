@@ -1,0 +1,360 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_vertical_margin" >
+
+                    <TextView
+                        android:id="@+id/parallel_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/main_layout_title"
+                        android:textColor="#ffffff"
+                        android:textSize="6pt" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                    <TextView
+                        android:id="@+id/opencl_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/opencl_layout_title"
+                        android:textColor="#ffffff"
+                        android:textSize="5pt" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/select_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                <FrameLayout
+                    android:id="@+id/sha_1_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/sha_1_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/sha_1_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/nlmeans_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/nlmeans_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/nlmeans"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/SRAD_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/srad_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/srad_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                <FrameLayout
+                    android:id="@+id/sobel_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/sobel_filter_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/sobel_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/hdr_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/hdr_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/hdr_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/bilateral_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/bilateral_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/bilateral_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/select_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                <FrameLayout
+                    android:id="@+id/k_means_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/k_means_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/k_means_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/matrix_multiplication"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/matrix_multiplication" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/matrix_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cl_device_info"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        android:src="@drawable/ic_launcher" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/info_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/aparapi_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/render_script_title"
+                android:textColor="#ffffff"
+                android:textSize="5pt" />
+
+            <LinearLayout
+                	android:id="@+id/select_layout_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin" >
+
+                <FrameLayout
+                    	android:id="@+id/gaussian_view"
+                    android:layout_width="@dimen/select_button_length"
+                    android:layout_height="@dimen/select_button_length" >
+
+                    <ImageView
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length"
+                        	android:src="@drawable/gaussian_filter_image" />
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/select_button_length"
+                        android:layout_height="@dimen/select_button_length" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:background="#99222222"
+                            android:text="@string/gaussian_button_text"
+                            android:textColor="#ffffff"
+                            android:textSize="4pt" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

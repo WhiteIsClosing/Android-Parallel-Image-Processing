@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/iter_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:text="@string/iter_text"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/original_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iter_edittext"
+                        android:text="@string/original_image_text"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/gpu_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/cpu_text"
+                        android:layout_below="@+id/cpu_image"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="@string/gpu_image_text"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:id="@+id/cpu_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/original_image"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:text="@string/cpu_image_text"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/cpu_image"
+                        android:layout_width="320dp"
+                        android:layout_height="320dp"
+                        android:layout_alignLeft="@+id/original_image"
+                        android:layout_below="@+id/cpu_text"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:src="@drawable/adaboost_image" />
+
+                    <ImageView
+                        android:id="@+id/gpu_image"
+                        android:layout_width="320dp"
+                        android:layout_height="320dp"
+                        android:layout_below="@+id/gpu_text"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:src="@drawable/adaboost_image" />
+
+                    <ImageView
+                        android:id="@+id/original_image"
+                        android:layout_width="320dp"
+                        android:layout_height="320dp"
+                        android:layout_alignLeft="@+id/gpu_image"
+                        android:layout_below="@+id/original_textview"
+                        android:paddingTop="@dimen/activity_vertical_margin"
+                        android:src="@drawable/adaboost_image" />
+
+                    <EditText
+                        android:id="@+id/iter_edittext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_below="@+id/iter_text"
+                        android:layout_centerHorizontal="true"
+                        android:ems="10"
+                        android:textColor="#ffffff"
+                        android:inputType="number"
+                        android:text="10"
+                        android:paddingTop="20dp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/result_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/show_results"
+            android:textColor="#ffffff"
+            android:textSize="6pt" />
+
+        <Button
+            android:id="@+id/processing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/result_button"
+            android:text="@string/processing_text"
+            android:textColor="#ffffff"
+            android:textSize="6pt" />
+
+        <Button
+            android:id="@+id/choose_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/processing_button"
+            android:text="@string/choose_image_button_text"
+            android:textColor="#ffffff"
+            android:textSize="6pt" />
+    </RelativeLayout>
+
+</RelativeLayout>
